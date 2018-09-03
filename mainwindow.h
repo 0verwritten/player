@@ -60,7 +60,6 @@ private slots:
   void on_applicationStateChanged(Qt::ApplicationState state);
   void on_minimizeButton_clicked();
   void on_restoreButton_clicked();
-  void on_maximizeButton_clicked();
   void on_closeButton_clicked();
   void on_windowTitlebar_doubleClicked();
 

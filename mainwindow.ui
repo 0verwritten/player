@@ -97,33 +97,13 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="minimizeButon">
-            <property name="maximumSize">
-             <size>
-              <width>25</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QPushButton" name="restoreButton">
-            <property name="maximumSize">
+            <property name="minimumSize">
              <size>
-              <width>25</width>
-              <height>16777215</height>
+              <width>0</width>
+              <height>25</height>
              </size>
             </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="maximizeButton">
             <property name="maximumSize">
              <size>
               <width>25</width>
@@ -137,6 +117,12 @@
           </item>
           <item>
            <widget class="QPushButton" name="closeButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="maximumSize">
              <size>
               <width>25</width>
@@ -144,7 +130,17 @@
              </size>
             </property>
             <property name="text">
-             <string>PushButton</string>
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/imgs/x.png</normaloff>:/imgs/x.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>17</width>
+              <height>17</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -174,6 +170,8 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
  <connections/>
 </ui>

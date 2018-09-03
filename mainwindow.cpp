@@ -165,14 +165,6 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowState(Qt::WindowNoState);
     styleWindow(true, true);
   }
-  void MainWindow::on_maximizeButton_clicked()
-  {
-    layout()->setMargin(0);
-    ui->restoreButton->setVisible(true);
-    ui->maximizeButton->setVisible(false);
-    setWindowState(Qt::WindowMaximized);
-    styleWindow(true, false);
-  }
   void MainWindow::on_closeButton_clicked()
   {
     close();
