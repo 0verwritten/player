@@ -26,16 +26,19 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     content.cpp \
-    windowdragger.cpp
+    windowdragger.cpp \
+    addmusic.cpp
 
 HEADERS += \
         mainwindow.h \
     content.h \
-    windowdragger.h
+    windowdragger.h \
+    addmusic.h
 
 FORMS += \
         mainwindow.ui \
-    content.ui
+    content.ui \
+    addmusic.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
