@@ -10,6 +10,9 @@ MainWindow::MainWindow(std::thread* b,QWidget *parent) :
 {
     ui->setupUi(this);
 
+    player=new QMediaPlayer();
+    list=new QMediaPlaylist();
+    player->setPlaylist(list);
     a=b;
     setWindowFlags(Qt::FramelessWindowHint | Qt::WindowSystemMenuHint);
     // append minimize button flag in case of windows,
@@ -24,11 +27,11 @@ MainWindow::MainWindow(std::thread* b,QWidget *parent) :
        || (QSysInfo::productType().toLower() == "windows" && QSysInfo::productVersion().toInt() > 7) ) {
 
        //shadow under window title text
-       QGraphicsDropShadowEffect *textShadow = new QGraphicsDropShadowEffect;
-       textShadow->setBlurRadius(4.0);
-       textShadow->setColor(QColor(0,0,0));
-       textShadow->setOffset(0.0);
-       ui->titleText->setGraphicsEffect(textShadow);
+       //QGraphicsDropShadowEffect *textShadow = new QGraphicsDropShadowEffect;
+       //textShadow->setBlurRadius(4.0);
+       //textShadow->setColor(QColor(0,0,0));
+       //textShadow->setOffset(0.0);
+       //ui->titleText->setGraphicsEffect(textShadow);
 
        //window shadow
        QGraphicsDropShadowEffect *windowShadow = new QGraphicsDropShadowEffect;
@@ -95,7 +98,12 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event) {
 
 void MainWindow::on_icon_clicked()
 {
-    addMusic* log=new addMusic();
+    addMusic* log=new addMusic(player,list);
     a=new std::thread([&](){log->runThread();});
     log->show();
+}
+
+void MainWindow::on_closeButton_clicked()
+{
+    this->close();
 }

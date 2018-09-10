@@ -6,6 +6,8 @@
 #include <QEvent>
 #include <thread>
 #include <windowdragger.h>
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
 
 namespace Ui {
 class MainWindow;
@@ -21,6 +23,8 @@ public:
     ~MainWindow();
 
 public:
+  QMediaPlayer* player;
+  QMediaPlaylist* list;
   void setContent(QWidget *w);
 
 
@@ -47,6 +51,8 @@ protected:
 
 private slots:
     void on_icon_clicked();
+
+    void on_closeButton_clicked();
 
 private:
     Ui::MainWindow *ui;
