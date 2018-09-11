@@ -2,5 +2,10 @@
     <qresource prefix="/">
         <file>imgs/x.png</file>
         <file>imgs/play.png</file>
+        <file>imgs/logo.png</file>
+        <file>imgs/next.png</file>
+        <file>imgs/previous.png</file>
+        <file>imgs/pause.png</file>
+        <file>imgs/pla.png</file>
     </qresource>
 </RCC>

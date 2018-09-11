@@ -27,6 +27,8 @@ private slots:
 
     void on_tableWidget_cellDoubleClicked(int row, int column);
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::addMusic *ui;
     QMediaPlayer* player;

@@ -67,10 +67,10 @@ MainWindow::MainWindow(std::thread* b,QWidget *parent) :
     ui->titleText->setText(text);
   }
 
-  void MainWindow::setWindowIcon(const QIcon &ico)
-  {
-    ui->icon->setIcon(ico.pixmap(16,16));
-  }
+  //void MainWindow::setWindowIcon(const QIcon &ico)
+  //{
+  //  ui->icon->setIcon(ico.pixmap(16,16));
+  //}
 
   MainWindow::~MainWindow(){
       delete ui;

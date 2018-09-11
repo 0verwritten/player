@@ -35,7 +35,7 @@ signals:
 
 public slots:
   void setWindowTitle(const QString &text);
-  void setWindowIcon(const QIcon &ico);
+  //void setWindowIcon(const QIcon &ico);
 
 //
 private:

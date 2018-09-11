@@ -146,7 +146,7 @@ border:none;
               </property>
               <property name="icon">
                <iconset resource="img.qrc">
-                <normaloff>:/imgs/play.png</normaloff>:/imgs/play.png</iconset>
+                <normaloff>:/imgs/logo.png</normaloff>:/imgs/logo.png</iconset>
               </property>
               <property name="iconSize">
                <size>
